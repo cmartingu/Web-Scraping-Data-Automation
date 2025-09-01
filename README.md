@@ -1,68 +1,66 @@
 # Web-Scraping-Data-Automation
 
-Este proyecto es un script en **Python** que realiza web scraping sobre la página [Books to Scrape](https://books.toscrape.com/) para extraer información sobre los libros disponibles.  
-Los datos extraídos incluyen:  
+This project is a **Python script** that performs web scraping on the [Books to Scrape](https://books.toscrape.com/) website to extract information about the available books.  
+The extracted data includes:  
 
-- **Título del libro**  
-- **URL directa al libro**  
-- **Precio**  
+- **Book title**  
+- **Price**  
+- **Direct book URL**  
 
-Los resultados se guardan en un archivo **CSV** dentro de la carpeta `data/`.
+The results are saved in a **CSV file** inside the `data/` folder.
 
 ---
 
-## 🚀 Instalación
+## 🚀 Installation
 
-1. Clona este repositorio o descarga los archivos del proyecto.
+1. Clone this repository or download the project files:
 
 ```bash
-
 git clone https://github.com/cmartingu/Web-Scraping-Data-Automation
 ```
-2. Asegúrate de tener **Python 3** instalado.  
-3. Instala las dependencias ejecutando:  
-
+2. Make sure to have **Python 3** installed.
+3. Get into the directory cloned:
 ```bash
-
+cd Web-Scraping-Data-Automation
+```
+4. Install the required dependencies:
+```bash
 pip install -r requirements.txt
 ```
 
-## 📂 Initial structure of the project
+## 📂 Initial Project Structure
 ```bash
-
 Web-Scraping-Data-Automation
 ├── src/
-│   └── scraper.py        # Principal script
-|   └── utils.py          # Utils to use
-├── requirements.txt      # Dependencias del proyecto
-└── README.md             # Documentación del proyecto
+│   └── scraper.py        # Main script
+|   └── utils.py          # Utility functions
+├── requirements.txt      # Project dependencies
+└── README.md             # Project documentation
 ```
 
-## 🛠️ Use
-Once you have cloned the repo, execute the next command
+## 🛠️ Usage
+Execute the next command:
 ```bash
-
-cd Web-Scraping-Data-Automation
 python src/scraper.py
 ```
-Esto recorrerá todas las páginas de Books to Scrape y guardará los resultados en data/results.csv.
+The scraper will iterate through all pages of Books to Scrape and save the results into data/results.csv.
 
 ## 📂 Final structure of the project
 ```bash
 
 Web-Scraping-Data-Automation
 ├── data/
-│   └── results.csv       # Results
-|   └── scraper.log       # LOG file
+│   └── results.csv       # Extracted results
+|   └── scraper.log       # Log file
 ├── src/
-│   └── scraper.py        # Principal script
-|   └── utils.py          # Utils to use
-├── requirements.txt      # Dependencias del proyecto
-└── README.md             # Documentación del proyecto
+│   └── scraper.py        # Main script
+|   └── utils.py          # Utility functions
+├── requirements.txt      # Project dependencies
+└── README.md             # Project documentation
 ```
 
-## 📑 Ejemplo de salida
-El archivo results.csv tendrá un formato como el siguiente:
+## 📑 Example Output
+The results.csv file will look like this:
 ```csv
 
 title,url,price
@@ -71,4 +69,3 @@ Tipping the Velvet,53.74,https://books.toscrape.com/catalogue/tipping-the-velvet
 Soumission,50.10,https://books.toscrape.com/catalogue/soumission_998/index.html
 ...
 ```
-
