@@ -69,3 +69,7 @@ Tipping the Velvet,53.74,https://books.toscrape.com/catalogue/tipping-the-velvet
 Soumission,50.10,https://books.toscrape.com/catalogue/soumission_998/index.html
 ...
 ```
+
+## 📜 License
+This project is distributed under the MIT License.
+You are free to use it, adapt it and share it
