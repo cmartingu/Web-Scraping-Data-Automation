@@ -1,6 +1,10 @@
 from utils import get_books_from_page, write_csv_header, scrape_page
 import traceback
 import logging
+import os
+
+# Create data folder
+os.makedirs("data", exist_ok=True)
 
 # logging configuration, for .log file
 logging.basicConfig(
